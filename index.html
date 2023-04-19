@@ -3,25 +3,53 @@
 <head>
     <title>Créditos</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+        
         .creditos {
             max-width: 600px;
             margin: 0 auto;
-            text-align: center;
-            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
         }
         
         .creditos-item {
-            margin-bottom: 20px;
+            width: 200px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .creditos-item:hover {
+            transform: scale(1.05);
         }
         
         .creditos-nome {
             font-weight: bold;
             font-size: 18px;
+            color: #333;
+            margin-top: 10px;
         }
         
         .creditos-descricao {
-            color: gray;
+            color: #777;
             font-size: 14px;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -29,15 +57,19 @@
     <h1>Créditos</h1>
     <div class="creditos">
         <div class="creditos-item">
-            <div class="creditos-nome">Nome da Pessoa 1</div>
+            <div class="creditos-nome">João Gabriel</div>
             <div class="creditos-descricao">Cargo/Ocupação da Pessoa 1</div>
         </div>
         <div class="creditos-item">
-            <div class="creditos-nome">Nome da Pessoa 2</div>
+            <div class="creditos-nome">Milla</div>
             <div class="creditos-descricao">Cargo/Ocupação da Pessoa 2</div>
         </div>
         <div class="creditos-item">
-            <div class="creditos-nome">Nome da Pessoa 3</div>
+            <div class="creditos-nome">Jaqueline</div>
+            <div class="creditos-descricao">Cargo/Ocupação da Pessoa 3</div>
+        </div>
+        <div class="creditos-item">
+            <div class="creditos-nome">Caio Felipe</div>
             <div class="creditos-descricao">Cargo/Ocupação da Pessoa 3</div>
         </div>
     </div>
